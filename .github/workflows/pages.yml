@@ -28,10 +28,25 @@ jobs:
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
+      - name: Prepare Pages artifact
+        run: |
+          mkdir -p _site
+          cp index.html styles.css .nojekyll _site/
+
+          for file in 404.html favicon.ico robots.txt sitemap.xml CNAME site.webmanifest manifest.webmanifest; do
+            if [ -f "$file" ]; then
+              cp "$file" _site/
+            fi
+          done
+
+          if [ -d assets ]; then
+            cp -R assets _site/assets
+          fi
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
 
       - name: Deploy to GitHub Pages
         id: deployment

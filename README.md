@@ -5,7 +5,7 @@ Minimal static marketing site for GitHub Pages deployment from the repository ro
 ## Files
 
 - `index.html` - landing page content and structure
-- `styles.css` - responsive styling (black/green/cream design language)
+- `styles.css` - responsive styling aligned to NUS Computing-inspired blue/orange visual language
 - `.nojekyll` - disables Jekyll processing on GitHub Pages
 - `.github/workflows/pages.yml` - GitHub Pages deployment workflow
 
@@ -20,7 +20,7 @@ The page centers on:
 
 ## Image placeholders to replace later
 
-The page intentionally uses semantic placeholder blocks (no broken `<img>` tags). Replace with real media when available.
+The page intentionally uses semantic upload slots (no broken `<img>` tags). Replace with real media when available.
 
 Suggested assets and prompts:
 
