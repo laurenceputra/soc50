@@ -256,6 +256,12 @@ ul {
   margin: 0.4rem 0 1rem;
 }
 
+.tier-subtitle {
+  margin: 1rem 0 0.35rem;
+  font-size: 1.02rem;
+  color: var(--primary-blue);
+}
+
 .tiers li {
   display: flex;
   justify-content: space-between;
@@ -266,6 +272,17 @@ ul {
 
 .tiers span {
   color: var(--text-dark);
+}
+
+.tiers-direct {
+  margin-top: 0;
+}
+
+.tier-highlight {
+  background: #fff8ef;
+  border-bottom-color: #f4c68f;
+  border-left: 4px solid var(--primary-orange);
+  padding-left: 0.65rem;
 }
 
 a {
